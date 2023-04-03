@@ -1,0 +1,28 @@
+.input-wrap {
+  display: flex;
+  font-size: 24px;
+  gap: .5rem;
+
+  .input-wrap-item {
+    border: 1px solid transparent;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    -moz-appearance:textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &--error {
+      border-color: red !important;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
